@@ -1,0 +1,48 @@
+.vantagem {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ebebeb;
+
+}
+
+
+
+.vantagem__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.vantagem__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0 1rem;
+    width: 300px;
+}
+
+.vantagem__icone {
+    width: 3rem;
+    padding-right: 0.5rem;
+}
+
+.vantagem__texto {
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+.vantagem__texto--titulo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #db0000;
+}
+
+.vantagem__texto--copy {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    width: 186px;
+}

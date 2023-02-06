@@ -1,0 +1,271 @@
+/* @media screen and (max-width: 320px) {
+    .filtro__lista {
+        left: 190px!important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .filtro__lista {
+        left: 245px!important;
+    }
+} */
+
+@media screen and (max-width: 425px) {
+    .logo__cabecalho {
+        width: 3rem;
+    }
+
+    .menu__busca--icone {
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+
+    .menu__busca {
+        display: none;
+    }
+
+    /* .menu__carrinho--resp {
+        position: relative;
+        left: -12px;
+    } */
+
+    .menu__busca--resp {
+        display: none!important;
+    }
+
+    #busca {
+        display: none;
+    }
+
+    .menu__busca--campo {
+        display: none;
+        position: relative;
+        top: 71px;
+        left: -75px;
+        border-radius: 0px;
+        width: 300px;
+    }
+
+    .icone__carrinho {
+        width: 4rem;
+        padding: 0;
+    }
+
+    .menu__link {
+        font-size: .6rem;
+    }
+
+    .menu__hamburger {
+        display: flex!important;
+    }
+
+    .banner__img {
+        height: 230px!important;
+    }
+
+    .vantagem__icone {
+        width: 2rem;
+    }
+
+    .vantagem__texto--titulo {
+        font-size: .9rem;
+    }
+    
+    .vantagem__texto--copy {
+        font-size: .9rem;
+    }
+
+    .vantagem__item {
+        justify-content: center;
+        padding: .3rem 0;
+    }
+
+    .categorias {
+        display: none!important;
+    }
+
+    .populares__titulo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .populares__item {
+        max-width: 148px;
+    }
+
+    .produto__img {
+        width: 125px;
+    }
+
+    .produto__titulo {
+        font-size: .9rem;
+    }
+
+    .produto__preco {
+        font-size: 1.13rem;
+    }
+
+    .lounge__titulo {
+        font-size: 1.5rem;
+    }
+
+    .lounge__galeria--imagem {
+        max-width: 270px;
+        height: 150px;
+    }
+
+    .lounge__localizacao--titulo {
+        font-size: 1.5rem;
+
+    }
+
+    .mapagoogle {
+        width: 300px!important;
+        height: 225px!important;
+    }
+
+    .lounge__endereco {
+        font-size: .9rem;
+    }
+
+    .rodape {
+        padding: 1rem;
+    }
+
+    .rodape__logo {
+        display: flex;
+        padding: .5rem 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .rodape_texto {
+        text-align: center;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    .social__rodape {
+        justify-content: center;
+        padding: .5rem;
+    }
+
+    .social__rodape--item {
+        border-radius: 2rem;
+        padding: .5rem;
+    }
+
+    .social__rodape--icone {
+        width: 1.5rem;
+    }
+
+    /* responsivo da página categoria */
+
+    .categoria {
+        display: none;
+    }
+
+    .breadcrumbs__link {
+        font-size: .9rem!important;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 426px) {
+    .menu__item {
+        margin: 0;
+    }
+
+    .mobile__busca {
+        display: none;
+    }
+
+    .menu__hamburger {
+        display: none!important;
+    }
+
+    .banner__img {
+        height: 290px;
+    }
+
+    .vantagem__item {
+        padding: .5rem;
+    }
+    
+    .populares {
+        padding: 1rem 0;
+    }
+
+    .lounge {
+        padding: 1rem 0;
+    }
+
+    .lounge__localizacao {
+        padding: 1rem 0;
+    }
+
+    .mapagoogle {
+        width: 700px;
+        height: 325px;
+    }
+
+    .rodape {
+        padding: 1rem;
+    }
+
+    /* responsivo da página categoria */
+
+    .categoria {
+        display: none;
+    }
+
+    .categoria__mobile--galeria h4 {
+        text-align: center;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width: 950px) {
+    .banner__img {
+        height: 370px;
+    }
+
+    .mobile__busca {
+        display: none;
+    }
+
+    .menu__hamburger {
+        display: none!important;
+    }
+
+    .mapagoogle {
+        width: 960px;
+        height: 400px;
+    }
+
+    .rodape {
+        padding: 2rem;
+    }
+
+    /* responsivo da página categoria */
+
+    .categoria {
+        display: flex;
+    }
+
+    .categoria__mobile {
+        display: none;
+    }
+}

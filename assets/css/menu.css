@@ -1,0 +1,93 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black
+}
+
+.logo__cabecalho {
+    width: 5rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu__busca {
+    width: 100%;
+    max-width: 350px;
+    height: 55px;
+    position: relative;
+}
+
+.menu__busca--campo {
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 4px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+    outline: none;
+    border: none;
+}
+
+.menu__busca--icone {
+    width: 40px;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__busca--img {
+    height: 24px;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__item {
+    margin: 0 1rem;
+}
+
+.icone__carrinho {
+    padding-right: 0.5rem;
+    width: 2rem;
+    stroke: #fdfdfd;
+}
+
+
+.menu__link {
+    color: #fdfdfd;
+}
+
+.menu__link:hover {
+    opacity: 90%;
+    color: #fdfdfd;
+}
+
+.menu__link:hover>.menu__link--carrinho {
+    opacity: 90%;
+}
+
+.menu__hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger {
+    width: 32px;
+    height: 2px;
+    background-color: #fdfdfd;
+    margin: 4px 0;
+    border-radius: 1px;
+}

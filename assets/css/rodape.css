@@ -1,0 +1,72 @@
+.rodape {
+    background-color: black;
+    padding: 2rem 0;
+}
+
+.logo__rodape {
+    width: 8rem;
+}
+
+.rodape p {
+    color: #fdfdfd;
+
+}
+
+.contato__rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__item {
+    color: #fdfdfd;
+    font-weight: bold;
+}
+
+.icone__rodape {
+    width: 1.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    color: #fdfdfd;
+}
+
+.icone__rodape:nth-child(1) {
+    color: #51CE9A;
+}
+
+.link__rodape {
+    color: #fdfdfd;
+}
+
+.link__rodape--horario {
+    color: #fdfdfd;
+    font-weight: 300;
+}
+
+.link__rodape--horario:hover{
+    cursor:default;
+    color: rgb(172, 172, 172);
+}
+
+.link__rodape:hover{
+    cursor: pointer;
+    color: rgb(172, 172, 172);
+    /*font-weight: bold;*/
+}
+
+
+.social__rodape {
+    display: flex;
+
+}
+
+.social__rodape--item {
+    background-color: #fdfdfd;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
+
+.social__rodape--icone {
+    width: 2rem;
+}
+

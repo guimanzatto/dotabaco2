@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria - DoTabaco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/dropdown.css">
+    <link rel="stylesheet" href="./assets/css/categorias.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/vantagem.css">
+    <link rel="stylesheet" href="./assets/css/populares.css">
+    <link rel="stylesheet" href="./assets/css/produtos.css">
+    <link rel="stylesheet" href="./assets/css/lounge.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/responsivo.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/breadcrumbs.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/categoria.css">
+    <link rel="stylesheet" href="./assets/css/galeria__categoria.css">
+    <link rel="stylesheet" href="./assets/css/filtro.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="row d-flex justify-content-evenly align-items-center">
+                <div class="col d-flex justify-content-center">
+                    <img class="logo__cabecalho" src="assets/img/logo.png" alt="Logo da DoTabaco">
+                </div>
+                <div class="menu__busca--resp col-6 d-flex justify-content-center">
+                    <div class="menu__busca">
+                        <input id="busca" type="search" placeholder="Digite aqui o que procura..." class="menu__busca--campo">
+                        <span class="menu__busca--icone" onclick="clickBusca()"><img class="menu__busca--img" src="./assets/img/search.svg" alt=""></span>
+                    </div>
+                </div>
+                <div class="menu__carrinho--resp col d-flex justify-content-center align-items-center">
+                    <nav class="menu">
+                        <ul class="menu__lista">
+                            <li class="menu__item d-flex align-items-center"><a class="menu__link d-flex flex-column align-items-center" href="#"><span class="menu__link--carrinho"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fdfdfd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icone__carrinho feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></i></span>Minha Sacola</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu__hamburger col" onclick="clickMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </div>
+                <div id="itens" class="categoria__mobile">
+                    <ul class="categoria__mobile--lista">
+                        <li class="categoria__mobile--item"><a class="categoria__mobile--link" href="#">Charutos</a></li>
+                        <li class="categoria__mobile--item"><a class="categoria__mobile--link" href="#">Kits</a></li>
+                        <li class="categoria__mobile--item"><a class="categoria__mobile--link" href="#">Acessórios</a></li>
+                        <li class="categoria__mobile--item"><a class="categoria__mobile--link" href="#">Cigarrilhas</a></li>
+                        <li class="categoria__mobile--item"><a class="categoria__mobile--link" href="#">Bebidas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile__busca">
+        <input type="search" class="mobile__busca--campo" placeholder="Digite o que procura aqui...">
+        <span class="mobile__busca--icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fdfdfd" d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"/></svg></span>
+    </div>
+    
+    <div class="categorias container-fluid d-flex">
+        <ul class="categorias__lista container-fluid d-flex flex-row justify-content-center">
+            <li class="categorias__item"><a href="#" class="categorias__link">Charutos</a>
+                <ul class="dropdown container">
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Cubanos</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Link</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Link</a></li>
+                </ul>
+            </li>
+            <li class="categorias__item"><a href="#" class="categorias__link">Kits</a>
+                <ul class="dropdown container">
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Link</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Link</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Link</a></li>
+                </ul>
+            </li>
+            <li class="categorias__item"><a href="#" class="categorias__link">Acessórios</a></li>
+            <li class="categorias__item"><a href="#" class="categorias__link">Cigarrilhas</a></li>
+            <li class="categorias__item"><a href="#" class="categorias__link">Bebidas</a></li>
+            <li class="categorias__item"><a href="#" class="categorias__link">Caixas vazias</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section>
+            <div class="breadcrumbs container d-flex flex-row justify-content-start">
+                <ul class="breadcrumbs__lista d-flex">
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">Página inicial</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link breadcrumbs__link--active">Categoria</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- seção desktop -->
+        <section class="categoria container-fluid">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="sidebar col-2">
+                        <div class="sidebar">
+                            <div class="sidebar__item">
+                                <h4 class="sidebar__titulo">Filtrar por marcas</h4>
+                                <div class="border"></div>
+                                <div class="sidebar__campo">
+                                    <input class="sidebar__campo--input" type="checkbox" name="corona" id="corona">
+                                    <label class="sidebar__campo--label" for="corona">corona</label>
+                                </div>
+                                <div class="sidebar__campo">
+                                    <input class="sidebar__campo--input" type="checkbox" name="cohiba" id="cohiba">
+                                    <label class="sidebar__campo--label" for="cohiba">cohiba</label>
+                                </div>
+                                <div class="sidebar__campo">
+                                    <input class="sidebar__campo--input" type="checkbox" name="bolivar" id="bolivar">
+                                    <label class="sidebar__campo--label" for="bolivar">bolivar</label>
+                                </div>
+                                <div class="sidebar__btn d-flex justify-content-center">
+                                    <button type="button" class="btn-2 btn-outline-primary">Filtrar</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="galeria__categoria col-8">
+                        <div class="container-fluid">
+                            <h4 class="populares__titulo">Categoria</h4>
+                        </div>
+                        <ul class="populares__lista d-flex flex-row justify-content-start">
+                            <li class="populares__item">
+                                <a href="" class="populares__card d-flex flex-column align-items-center">
+                                    <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                    <div class="produto__texto d-flex flex-column align-items-center">
+                                        <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                        <p class="produto__preco">R$49,90</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                </a>
+                            </li>
+                            <li class="populares__item">
+                                <a href="" class="populares__card d-flex flex-column align-items-center">
+                                    <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                    <div class="produto__texto d-flex flex-column align-items-center">
+                                        <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                        <p class="produto__preco">R$49,90</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                </a>
+                            </li>
+                            <li class="populares__item">
+                                <a href="" class="populares__card d-flex flex-column align-items-center">
+                                    <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                    <div class="produto__texto d-flex flex-column align-items-center">
+                                        <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                        <p class="produto__preco">R$49,90</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                </a>
+                            </li>
+                            <li class="populares__item">
+                                <a href="" class="populares__card d-flex flex-column align-items-center">
+                                    <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                    <div class="produto__texto d-flex flex-column align-items-center">
+                                        <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                        <p class="produto__preco">R$49,90</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                </a>
+                            </li>
+                            <li class="populares__item">
+                                <a href="" class="populares__card d-flex flex-column align-items-center">
+                                    <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                    <div class="produto__texto d-flex flex-column align-items-center">
+                                        <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                        <p class="produto__preco">R$49,90</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                </a>
+                            </li>
+                            <li class="populares__item">
+                                <a href="" class="populares__card d-flex flex-column align-items-center">
+                                    <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                    <div class="produto__texto d-flex flex-column align-items-center">
+                                        <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                        <p class="produto__preco">R$49,90</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- seção mobile -->
+        <section class="categoria__mobile">
+            <div class="container-fluid">
+                <div class="row d-flex">
+                    <div class="filtro__botao">
+                        <ul class="filtro__botao--btn" onclick="clickFiltro()" ><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg></span>
+                            <li>
+                                Filtrar por marcas
+                            </li>
+                        </ul>
+                        
+
+                        <ul id="filtro" class="filtro__lista">
+                            <div class="sidebar__campo">
+                                <input class="sidebar__campo--input" type="checkbox" name="corona" id="corona">
+                                <label class="sidebar__campo--label" for="corona">corona</label>
+                            </div>
+                            <div class="sidebar__campo">
+                                <input class="sidebar__campo--input" type="checkbox" name="cohiba" id="cohiba">
+                                <label class="sidebar__campo--label" for="cohiba">cohiba</label>
+                            </div>
+                            <div class="sidebar__campo">
+                                <input class="sidebar__campo--input" type="checkbox" name="bolivar" id="bolivar">
+                                <label class="sidebar__campo--label" for="bolivar">bolivar</label>
+                            </div>
+                            <div class="sidebar__btn d-flex justify-content-center">
+                                <button type="button" class="btn-2 btn-outline-primary">Filtrar</button>
+                            </div>
+                            
+                        </ul>
+                    </div>
+                
+
+                    <div class="categoria__mobile--galeria">
+                        <div>
+                            <div class="container-fluid">
+                                <h4 class="populares__titulo">Categoria</h4>
+                            </div>
+                            <ul class="populares__lista d-flex flex-row justify-content-center">
+                                <li class="populares__item">
+                                    <a href="" class="populares__card d-flex flex-column align-items-center">
+                                        <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                        <div class="produto__texto d-flex flex-column align-items-center">
+                                            <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                            <p class="produto__preco">R$49,90</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                    </a>
+                                </li>
+                                <li class="populares__item">
+                                    <a href="" class="populares__card d-flex flex-column align-items-center">
+                                        <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                        <div class="produto__texto d-flex flex-column align-items-center">
+                                            <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                            <p class="produto__preco">R$49,90</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                    </a>
+                                </li>
+                                <li class="populares__item">
+                                    <a href="" class="populares__card d-flex flex-column align-items-center">
+                                        <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                        <div class="produto__texto d-flex flex-column align-items-center">
+                                            <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                            <p class="produto__preco">R$49,90</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                    </a>
+                                </li>
+                                <li class="populares__item">
+                                    <a href="" class="populares__card d-flex flex-column align-items-center">
+                                        <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                        <div class="produto__texto d-flex flex-column align-items-center">
+                                            <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                            <p class="produto__preco">R$49,90</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                    </a>
+                                </li>
+                                <li class="populares__item">
+                                    <a href="" class="populares__card d-flex flex-column align-items-center">
+                                        <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                        <div class="produto__texto d-flex flex-column align-items-center">
+                                            <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                            <p class="produto__preco">R$49,90</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                    </a>
+                                </li>
+                                <li class="populares__item">
+                                    <a href="" class="populares__card d-flex flex-column align-items-center">
+                                        <img src="./assets/img/charuto-vegafina-classico-corona-unidade.jpg" alt="Foto do Charuto Vegafino Classico Corona" class="produto__img">
+                                        <div class="produto__texto d-flex flex-column align-items-center">
+                                            <h4 class="produto__titulo">Charuto Vegafino Classico Corona</h4>
+                                            <p class="produto__preco">R$49,90</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-primary">Comprar</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="rodape container-fluid  d-flex justify-content-evenly align-items-center">
+        <div class="row"> 
+            <div class="rodape__logo col-sm">
+                <img class="logo__rodape" src="./assets/img/logo_croped.png" alt="Logo da DoTabaco">
+                <p class="rodape_texto">A DoTabaco tem tudo para sua sessão de charuto. Compra 100% Segura e Envio Imediato.</p>
+            </div>
+            <div class="contato col-sm">
+                <ul class="contato__rodape">
+                    <li class="contato__item">Estamos no WhatsApp</br></li><div><img class="icone__rodape" src="./assets/img/whatsapp.svg" alt="WhatsApp"><a class="link__rodape" href="">(11) 9 1234-5678</a></div>
+                    <li class="contato__item">Compre por telefone</br></li><div><img class="icone__rodape" src="./assets/img/phone.svg" alt="Telefone"><a class="link__rodape" href="tel:+5511912345678">(11) 9 1234-5678</a></div>
+                    <li class="contato__item">Horário de Funcionamento</br></li><div><img class="icone__rodape" src="./assets/img/clock.svg" alt="Horário de Funcionamento"><a class="link__rodape--horario" href="#">seg a sex, de 8h às 17h. </a></div>
+                </ul>
+            </div>
+            <div class="social col-sm">
+                <ul class="social__rodape">
+                    <li class="social__rodape--item"><a href="#"><img class="social__rodape--icone" src="./assets/img/facebook.svg" alt="Facebook"></a></li>
+                    <li class="social__rodape--item"><a href="#"><img class="social__rodape--icone" src="./assets/img/instagram.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+ 
+        
+
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        function clickFiltro() {
+            if (filtro.style.display == 'none'){
+                filtro.style.display = 'block'
+            } else {
+                filtro.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

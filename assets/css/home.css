@@ -1,0 +1,18 @@
+:root {
+    --laranja: #f68c0d;
+    --cinza-escuro: #333333;
+    --cinza-claro: #c5c5c5;
+    --branco: #fdfdfd;
+    --preto: #000000;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+::placeholder {
+    color: #666666;
+    opacity: 1;
+}
