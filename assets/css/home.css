@@ -1,7 +1,10 @@
 :root {
+    --background-cinza: #f9f9f9;
     --laranja: #f68c0d;
     --cinza-escuro: #333333;
     --cinza-claro: #c5c5c5;
+    --cinza-claro2: #e2e2e2;
+    --cinza: #949494;
     --branco: #fdfdfd;
     --preto: #000000;
 }

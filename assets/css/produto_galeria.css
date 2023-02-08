@@ -1,0 +1,29 @@
+.produto__galeria--img {
+    width: 400px;
+}
+
+.produto__nav {
+    display: flex;
+    padding: .5rem 0;
+
+}
+
+.produto__nav--circulo {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 100px;
+    margin-right: .5rem;
+    display: flex;
+    background-color: var(--cinza-claro);
+    
+}
+
+.produto__nav--circulo:last-child {
+    margin-right: 0;
+}
+
+.produto__nav--circulo-ativo {
+    border: 1px solid var(--preto);
+    background-color: var(--preto);
+
+}

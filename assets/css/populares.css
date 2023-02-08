@@ -1,10 +1,11 @@
 .populares {
     padding: 2rem 0;
-    background-color: #F6F8F7;
+    background-color: var(--background-cinza);
 }
 
 .populares__titulo {
      padding-bottom: 1rem;
+     text-align: center;
      font-size: 2rem;
      color: #333333;
      font-weight: 700;

@@ -1,0 +1,13 @@
+.produto {
+    padding: 1rem 0;
+}
+
+.produto__espec {
+    background-color: var(--background-cinza);
+    padding: 2rem 0;
+}
+
+.produto__espec--row {
+    width: 100%;
+    margin-left: 0;
+}

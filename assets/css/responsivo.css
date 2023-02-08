@@ -176,7 +176,44 @@
         font-size: .9rem!important;
     }
 
+
+    /* responsivo da página produto */
+
+    .produto__galeria--img {
+        width: 240px!important;
+    }
+
+    .produto__descricao {
+        text-align: center;
+        padding: .5rem;
+    }
+
+    .produto__nome {
+        text-align: center;
+        font-size: 1.25rem!important;
+    }
     
+    .produto__pagamento {
+        text-align: center;
+    }
+
+    .produto__pagamento--cartao {
+        align-items: center;
+    }
+
+    .produto__btn--botao {
+        /* width: 100%!important; */
+        font-size: .9rem;
+    }
+
+    .produto__espec {
+        padding: 1rem 0!important;
+    }
+
+    .produto__espec--descricao {
+        width: 95%!important;
+    }
+
 }
 
 
@@ -232,7 +269,35 @@
         text-align: center;
     }
 
+    /* responsivo da página produto */
+
+    .produto__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
+    .produto__pagamento {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .produto__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .produto__pagamento--avista {
+        align-items: center;
+    }
+    
+    .produto__pagamento--cartao {
+        align-items: center;
+    }
 }
 
 
@@ -268,4 +333,28 @@
     .categoria__mobile {
         display: none;
     }
+
+    /* responsivo da página produto */
+
+    .produto__info {
+        display: block!important;
+    }
+
+    .produto__pagamento {
+        display: block!important;
+    }
+
+    .produto__btn {
+        display: block;
+    }
+
+    .produto__pagamento--avista {
+        align-items: start;
+    }
+
+    .produto__pagamento--cartao {
+        align-items: start;
+    }
+
+
 }

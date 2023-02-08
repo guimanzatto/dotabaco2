@@ -1,0 +1,82 @@
+.produto__descricao {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--cinza-claro2);
+}
+
+.produto__marca {
+    text-transform: capitalize;
+    color: var(--cinza);
+}
+
+.produto__marca:hover {
+    color: var(--cinza-claro);
+}
+
+.produto__nome {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--cinza-escuro);
+    margin-bottom: 0;
+}
+
+.produto__pagamento--avista {
+    padding: .5rem 0 0 0;
+    /* border-bottom: 1px solid var(--cinza-claro2); */
+}
+
+.produto__pagamento--avista span {
+    margin-left: .2rem;
+    font-size: 1.13rem;
+    color: var(--laranja);
+}
+
+.produto__pagamento--titulo {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--laranja);
+}
+
+.produto__pagamento--legenda {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.produto__pagamento--cartao {
+    padding: .5rem 0 0 0;
+    border-bottom: 1px solid var(--cinza-claro2);
+}
+
+.preco__venda {
+    margin-bottom: 0;
+    font-size: .95rem;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    color: var(--cinza);
+    margin-right: .3rem ;
+}
+
+.preco__promo {
+    margin-bottom: 0;
+    font-size: .95rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.preco__parcelamento {
+    margin-bottom: 0;
+    font-size: .95rem;
+}
+
+.produto__btn {
+    padding: 1rem 0;
+}
+
+.produto__btn--botao {
+    padding: .8rem 2rem;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    width: 80%;
+}
