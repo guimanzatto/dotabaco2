@@ -202,8 +202,12 @@
     }
 
     .produto__btn--botao {
-        /* width: 100%!important; */
+        width: 100%!important;
         font-size: .9rem;
+    }
+
+    .frete {
+        width: 100%!important;
     }
 
     .produto__espec {
@@ -288,7 +292,13 @@
     .produto__btn {
         width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+    }
+
+    .frete {
+        width: 100%;
     }
 
     .produto__pagamento--avista {
